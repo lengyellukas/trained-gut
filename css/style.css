@@ -225,18 +225,38 @@ body {
 /* ── RACES BAR ────────────────────────────────────────────── */
 .races-bar {
   background: var(--orange);
-  padding: 40px 64px;
+  padding: 28px 0;
+  overflow: hidden;
+  position: relative;
+}
+.races-bar::before,
+.races-bar::after {
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 80px;
+  z-index: 2;
+  pointer-events: none;
+}
+.races-bar::before {
+  left: 0;
+  background: linear-gradient(to right, var(--orange), transparent);
+}
+.races-bar::after {
+  right: 0;
+  background: linear-gradient(to left, var(--orange), transparent);
+}
+.races-track {
   display: flex;
   align-items: center;
   gap: 48px;
-  overflow-x: auto;
+  width: max-content;
+  animation: marquee 28s linear infinite;
 }
-.races-label {
-  font-size: 10px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.7);
-  white-space: nowrap;
+.races-track:hover { animation-play-state: paused; }
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 .race-tag {
   font-family: 'Bebas Neue', sans-serif;
@@ -248,7 +268,7 @@ body {
 }
 .race-tag:hover { opacity: 1; }
 .race-sep {
-  width: 4px; height: 4px;
+  width: 5px; height: 5px;
   background: rgba(255,255,255,0.4);
   border-radius: 50%;
   flex-shrink: 0;
@@ -474,7 +494,6 @@ footer {
   .steps-track { grid-template-columns: 1fr 1fr; }
   .section, .how-section, .personal-section { padding: 72px 32px; }
   footer { flex-direction: column; gap: 12px; text-align: center; }
-  .races-bar { padding: 28px 32px; gap: 28px; }
   .cta-section { padding: 80px 32px; }
   .cta-form { flex-direction: column; }
   .cta-form .form-input { border-right: 1px solid rgba(255,255,255,0.15); }
