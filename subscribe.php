@@ -109,7 +109,7 @@ $confirm_body    = "Hi,\n\n"
                  . "personalised gut-training program for endurance athletes.\n\n"
                  . "We'll be in touch before launch with exclusive early pricing.\n\n"
                  . "In the meantime, if you have any questions, reply to this email.\n\n"
-                 . "Train your gut, fuel your performance\n"
+                 . "Train your gut, fuel your race\n"
                  . "The TrainedGut Team\n"
                  . "trainedgut.com";
 
