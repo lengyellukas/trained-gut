@@ -105,11 +105,11 @@ mail(NOTIFY_EMAIL, $subject, $body, $headers);
 // Send confirmation email to subscriber
 $confirm_subject = "You're on the list — " . SITE_NAME;
 $confirm_body    = "Hi,\n\n"
-                 . "You're registered for early access to TrainedGut — the world's first\n"
+                 . "You're registered for early access to TrainedGut - the world's first\n"
                  . "personalised gut-training program for endurance athletes.\n\n"
                  . "We'll be in touch before launch with exclusive early pricing.\n\n"
                  . "In the meantime, if you have any questions, reply to this email.\n\n"
-                 . "Train smart,\n"
+                 . "Train your gut, fuel your performance\n"
                  . "The TrainedGut Team\n"
                  . "trainedgut.com";
 
