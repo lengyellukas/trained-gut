@@ -62,26 +62,9 @@ body {
   width: fit-content;
 }
 .swiss-flag {
-  width: 20px; height: 20px;
-  background: #FF0000;
-  position: relative;
+  width: 20px;
+  height: 20px;
   flex-shrink: 0;
-}
-.swiss-flag::before {
-  content: '';
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  width: 12px; height: 4px;
-  background: white;
-}
-.swiss-flag::after {
-  content: '';
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  width: 4px; height: 12px;
-  background: white;
 }
 .swiss-label {
   font-size: 10px;
