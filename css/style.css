@@ -412,6 +412,22 @@ body {
 }
 .science-stat-desc strong { color: white; }
 
+.science-stat-num-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 110px;
+  flex-shrink: 0;
+}
+.science-stat-num-sub {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--gold);
+  text-transform: none;
+  letter-spacing: 0.06em;
+}
+
 /* ── HOW IT WORKS ─────────────────────────────────────────── */
 .how-section { background: var(--dark); padding: 100px 64px; }
 .how-section .section-title { color: var(--white); }
