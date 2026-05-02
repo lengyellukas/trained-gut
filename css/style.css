@@ -323,7 +323,7 @@ body {
 .gap-line {
   margin-top: 48px;
   padding: 32px;
-  background: var(--dark);
+  background: var(--orange);
   font-size: 17px;
   line-height: 1.7;
   color: white;
@@ -568,6 +568,7 @@ footer {
   .hero-left::after { display: none; }
   .hero-right { padding: 40px 32px 60px; }
   .science-grid, .personal-grid { grid-template-columns: 1fr; gap: 40px; }
+  .science-right { display: none; }
   .steps-track { grid-template-columns: 1fr 1fr; }
   .section, .how-section, .personal-section { padding: 72px 32px; }
   footer { flex-direction: column; gap: 12px; text-align: center; }
