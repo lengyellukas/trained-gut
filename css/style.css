@@ -485,10 +485,10 @@ body {
   align-items: center;
   justify-content: center;
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 13px;
+  font-size: 24px;
   color: var(--orange);
   flex-shrink: 0;
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 3px solid var(--orange);
   position: relative;
   z-index: 1;
 }
