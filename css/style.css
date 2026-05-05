@@ -567,8 +567,13 @@ footer {
   .hero-left { padding: 72px 32px 56px; }
   .hero-left::after { display: none; }
   .hero-right { padding: 40px 32px 60px; }
-  .science-grid, .personal-grid { grid-template-columns: 1fr; gap: 40px; }
+  .science-grid, .personal-grid { grid-template-columns: 1fr; gap: 24px; }
+  .science-grid { grid-template-rows: auto; }
+  .science-title-block,
+  .science-left,
+  .science-right { grid-column: 1; grid-row: auto; }
   .science-right { display: none; }
+  .science-title-block .section-title { margin-bottom: 0; }
   .steps-track { grid-template-columns: 1fr 1fr; }
   .section, .how-section, .personal-section { padding: 72px 32px; }
   footer { flex-direction: column; gap: 12px; text-align: center; }
